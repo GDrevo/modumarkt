@@ -1,8 +1,12 @@
 import Meal from "./Meal"
 
-export default function Results(data) {
-  const meals = data.data.meals
+export default function Results({data, selectRecipe}) {
+  const meals = data.meals
+  // console.log(data.meals)
   // console.log(data.data.meals[0].strMealThumb)
+  const handleClick = (id) => {
+    selectRecipe(id)
+  }
 
   return (
     <div className="Results">
@@ -12,6 +16,8 @@ export default function Results(data) {
             name={meal.strMeal}
             img={meal.strMealThumb}
             key={meal.idMeal}
+            onClick={handleClick}
+            id={meal.idMeal}
           />
         )
       })}

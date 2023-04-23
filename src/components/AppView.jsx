@@ -18,6 +18,7 @@ export default function AppView() {
     <div className='AppView'>
       <Sidebar
         onClick={selectMode}
+        mode={mode}
       />
       {mode === 'Search' ? <SearchMode /> : <CategoryMode /> }
     </div>

@@ -17,9 +17,11 @@ export default function SearchBar({onSubmit, input, handleChange}) {
         onChange={handleChange}
         value={input}
         onKeyDown={handleKeyDown}
+        className="search-input"
       />
       <button
         onClick={handleSubmit}
+        className="search-submit"
       >
         OK
       </button>
