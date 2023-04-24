@@ -8,7 +8,6 @@ export default function AppView() {
 
   const selectMode = (e) => {
     const newMode = e.target.innerHTML
-    console.log(e.target.innerHTML)
     if (newMode !== mode) {
       setMode(newMode)
     }
