@@ -5,7 +5,7 @@ export default function Filter({ name, img, onClick }) {
     backgroundPosition: 'center',
     height: '200px',
     position: 'relative',
-  };
+  }
 
   const handleClick = (name) => {
     onClick(name)
@@ -17,5 +17,5 @@ export default function Filter({ name, img, onClick }) {
         {name}
       </h2>
     </div>
-  );
+  )
 }
