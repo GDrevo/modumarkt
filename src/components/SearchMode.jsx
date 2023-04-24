@@ -44,11 +44,16 @@ export default function SearchMode() {
 
   return(
     <div className="SearchMode">
-      <SearchBar
-        onSubmit={handleSubmit}
-        input={input}
-        handleChange={updateInput}
-      />
+      {selectedRecipe === null
+      ?
+        <SearchBar
+          onSubmit={handleSubmit}
+          input={input}
+          handleChange={updateInput}
+        />
+      :
+        null
+      }
       {selectedRecipe === null ? results : showView}
     </div>
   )

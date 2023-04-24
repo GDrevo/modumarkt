@@ -9,6 +9,10 @@
   color: whitesmoke;
 }
 
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
 /* Target the scrollbar */
 ::-webkit-scrollbar {
   width: 0.2rem;
@@ -67,9 +71,9 @@
 /* SEARCH MODE */
 
 .SearchMode {
-  width: 70%;
+  width: 85%;
   height: 93vh;
-  margin-right: 15%;
+  padding: 0 5rem;
 }
 
 /* SEARCH BAR */
@@ -107,8 +111,6 @@ input[type="text" i] {
 
 .Results {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   height: 83vh;
   overflow: auto;
@@ -149,20 +151,26 @@ input[type="text" i] {
 
 /* SHOW VIEW */
 .ShowView {
-  height: 85vh;
-  overflow: auto;
-  padding: 0 5rem;
+  height: 100%;
+  /* overflow: auto; */
+  /* padding: 0 5rem; */
 }
 
 .show-recipe-img {
   width: 300px;
+  margin-bottom: 1rem;
+}
+
+.br-1 {
   border-radius: 1rem;
 }
 
-.show-navbar {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+.ta-start {
+  text-align: start;
+}
+
+.fw-bold {
+  font-weight: bold;
 }
 
 .show-navbar-title {
@@ -170,4 +178,54 @@ input[type="text" i] {
   background-color: rgb(255, 151, 81);
   border-radius: 1rem;
   cursor: pointer;
+}
+
+/* CATEGORY MODE */
+.CategoryMode {
+  height: 93vh;
+  width: 85%;
+  padding: 0 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.back-button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 10vh;
+  cursor: pointer;
+  padding-right: 5rem;
+}
+
+/* FILTERS */
+.Filters {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: 80%;
+}
+
+/* FILTER */
+.Filter {
+  height: 200px;
+  width: 200px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.category-title {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.categoryResults {
+  height: 100%;
+  width: 100%;
 }
